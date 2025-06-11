@@ -1,0 +1,7 @@
+webhooks:
+  - url: "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+    severity: ["any"]
+    source: ["any"]
+  # - url: "https://discord.com/api/webhooks/ANOTHER_WEBHOOK_ID/ANOTHER_WEBHOOK_TOKEN"
+  #   severity: ["warning", "error", "critical"]
+  #   source: ["192.168.1.10"]
