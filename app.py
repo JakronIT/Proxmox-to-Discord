@@ -41,7 +41,8 @@ def format_discord_payload(data, hostname):
         "title": f"{get_severity_emoji(severity)} {severity.upper()} - {title}",
         "description": message if len(message) < 1000 else "",
         "color": color,
-        "footer": {"timestamp": ts}
+        "footer": {"text": hostname},
+        "timestamp": datetime.utcfromtimestamp(ts).isoformat() + "Z"
     }
     payload = {
         "content": None,
