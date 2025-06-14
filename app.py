@@ -42,7 +42,7 @@ def format_discord_payload(data, hostname):
         "description": message if len(message) < 1000 else "",
         "color": color,
         "footer": {"text": hostname},
-        "timestamp": datetime.utcfromtimestamp(ts).isoformat() + "Z"
+        "timestamp": datetime.utcfromtimestamp(ts).replace(microsecond=0).isoformat() + "Z"
     }
     payload = {
         "content": None,
